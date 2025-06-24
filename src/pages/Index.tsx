@@ -1,12 +1,19 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Gallery from "@/components/Gallery";
+import Services from "@/components/Services";
+import BookingForm from "@/components/BookingForm";
+import Contacts from "@/components/Contacts";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
-      </div>
+    <div className="min-h-screen bg-tattoo-dark">
+      <Hero />
+      <About />
+      <Gallery />
+      <Services />
+      <BookingForm />
+      <Contacts />
     </div>
   );
 };
